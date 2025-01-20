@@ -1,8 +1,6 @@
 import * as React from 'react'; 
 import { createRoot } from 'react-dom/client'; 
 
-import '../src/assets/style.css'; 
-
 async function addSticky() {
     const stickyNote = await miro.board.createStickyNote({
         content: 'Hello, World!', 
@@ -17,9 +15,7 @@ const App = () => {
     }, []); 
     
     return ( <div className="grid wrapper"> 
-      <div className="cs1 ce12"> 
-        <img src="/src/assets/congratulations.png" alt=""/> 
-      </div> 
+   
       <div className="cs1 ce12"> 
         <h1>Congratulations!</h1> 
         <p>You've just created your first Miro app!</p> 

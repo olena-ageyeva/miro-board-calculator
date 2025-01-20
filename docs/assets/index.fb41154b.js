@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill.c7c6310f.js";let i;window.location.pathname.replace("/index.html","");const a=async()=>{const o=i?`?frameId=${i}`:"";miro.board.ui.on("icon:click",async()=>{await miro.board.ui.openPanel({url:`sidebar.html${o}`},{width:"280px"})})};a();miro.board.events.on("FRAMEID",async o=>{i=o,await miro.board.notifications.showInfo(o)});
